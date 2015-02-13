@@ -1643,6 +1643,12 @@ $(function(){
 		getFolderInfo(fileRoot);
 	});
 
+    $('#uploader h1').css('cursor', 'pointer');
+
+    $('#uploader h1').click(function() {
+        window.location.href = $('#uploader h1').attr("data-path");
+    });
+
 	// Set buttons to switch between grid and list views.
 	$('#grid').click(function() {
 		setViewButtonsFor('grid');
